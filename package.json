@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "babel-node --presets es2017 --eval server.js",
+    "start": "babel-node server.js",
     "babel-version": "babel --version"
   },
   "repository": {
@@ -24,7 +24,8 @@
   "homepage": "https://github.com/nbragdon/koa-sample-es7#readme",
   "dependencies": {
     "babel-runtime": "^6.11.6",
-    "koa": "^2.0.0"
+    "koa": "^2.0.0",
+    "koa-router": "^7.0.1"
   },
   "devDependencies": {
     "babel-cli": "^6.14.0",
