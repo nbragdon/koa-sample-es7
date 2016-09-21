@@ -60,4 +60,6 @@ sampleRouter.get('/tooManyRequests', async ctx => {
 
 app.use(sampleRouter.routes());
 
-app.listen(PORT);
+app.listen(PORT, () => {
+  console.log('Server started on port: ' + PORT);
+});
