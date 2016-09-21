@@ -40,6 +40,24 @@ sampleRouter.get('/', async ctx => {
   };
 });
 
+sampleRouter.get('/created', async ctx => {
+  console.log('statusOnly');
+
+  ctx.status = 201;
+});
+
+sampleRouter.get('/noContent', async ctx => {
+  console.log('statusOnly');
+
+  ctx.status = 204;
+});
+
+sampleRouter.get('/tooManyRequests', async ctx => {
+  console.log('statusOnly');
+
+  ctx.status = 429;
+});
+
 app.use(sampleRouter.routes());
 
 app.listen(PORT);
